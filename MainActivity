@@ -1,0 +1,31 @@
+package com.example.test1;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		/*setContentView(R.layout.activity_main);
+		ImageView img=new ImageView(this);
+		img.setImageResource(R.drawable.cwxjl);
+		setContentView(img);*/
+		char ch1='2',ch2='5',ch3='0';
+		TextView txt = new TextView(this);
+		txt.setText("ch1,ch2,ch3 "+ch1+ch2+ch3+"\n");
+		setContentView(txt);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}
